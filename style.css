@@ -1,0 +1,1325 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:ital,wght@1,300&family=Quicksand&family=Roboto+Slab&family=Roboto:wght@300&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* code to hide scroll bar */
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow-x: hidden;
+  font-size: 10px;
+  background-color: rgba(255, 255, 255, 0.418);
+}
+a {
+  color: whitesmoke;
+}
+/* Defining Variables */
+:root {
+  --Tech: #2776EA;
+  --Auto: rgba(255, 115, 0, 0.712);
+  --Travel: rgb(18, 211, 0);
+  --background: #C0DAF9;
+  --heading_font: 'Montserrat', sans-serif; 
+}
+/* code for website perloader */
+/* code for sliding nav bar */
+#act_nav {
+  width: 25vw;
+  height: 100vh;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.205);
+  position: fixed;
+  top: 0%;
+  right: -100vw;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  box-shadow: 0px 50px 900px rgb(0, 1, 87);
+  z-index: 400;
+}
+#act_nav .links ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0px 20px 0px 0px;
+  overflow: hidden;
+}
+#act_nav .links ul li i {
+  font-size: 2.3rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 20px 0px 20px 0px;
+}
+#act_nav .links ul li a {
+  display: inline;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  transition: 0.6s;
+  margin: 15px 0px 15px 0px;
+  border: solid black 0px;
+}
+#act_nav .links ul li a:hover {
+  color: rgb(87, 87, 87);
+  font-size: 2.4rem;
+}
+/* navigation bar code */
+nav {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  transition: 0.3s;
+  background-color: white;
+  z-index: 100;
+}
+nav h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+nav .ham-bar {
+  margin-right: 20px;
+  cursor: pointer;
+}
+nav .ham-bar i {
+  font-size: 2rem;
+}
+/* for sticky navbar */
+
+/* -----------------------Main page code------------------------- */
+#landing_page {
+  width: 100vw;
+  min-height: 90vh;
+  height: max-content;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+/* marking */
+#landing_page .page_1 {
+  /* width: 95.7%; */
+  width: auto;
+  min-height: 98%;
+  height: max-content;
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 300px 300px 300px 300px;
+}
+/* -------------------blog code starts------------- */
+#landing_page .page_1 .blog1 {
+  background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
+    url(../IMAGES/ihone-min.jpg);
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  border-radius: 2px;
+  grid-column: span 2;
+  min-width: 300px;
+  min-height: 213.59px;
+  width: auto;
+  height: auto;
+}
+#landing_page .page_1 .blog1 .catg h3 {
+  background-color: var(--Tech);
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 0px 0px 10px 5px;
+}
+#landing_page .page_1 .blog1 h1 {
+  font-family: var(--heading_font);
+  font-weight: bolder;
+  font-size: 2.2rem;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+/* ------------------------blog no 2------------------------- */
+#landing_page .page_1 .blog4 {
+  background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
+    url(../IMAGES/mountain-min.jpg);
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  border-radius: 2px;
+  min-width: 300px;
+  min-height: 213.59px;
+  width: auto;
+  height: auto;
+}
+#landing_page .page_1 .blog4 .catg h3 {
+  background-color: var(--Travel);
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 0px 0px 10px 5px;
+}
+#landing_page .page_1 .blog4 h1 {
+  font-family: var(--heading_font);
+  font-weight: bold;
+  font-size: 2.1rem;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+/* ------------------------blog no 2----------------------- */
+#landing_page .page_1 .blog2 {
+  background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
+    url(../IMAGES/caaars-min.jpeg);
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  border-radius: 2px;
+  min-height: 213.59px;
+  min-width: 300px;
+  width: auto;
+  height: auto;
+}
+#landing_page .page_1 .blog2 .catg h3 {
+  background-color: var(--Auto);
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 0px 0px 10px 5px;
+}
+#landing_page .page_1 .blog2 h1 {
+  font-family: var(--heading_font);
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+
+/* --------------------------blog no 5--------------- */
+#landing_page .page_1 .blog5 {
+  background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
+    url(../IMAGES/rockets-min.jpg);
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  border-radius: 2px;
+  min-height: 213.59px;
+  min-width: 300px;
+}
+#landing_page .page_1 .blog5 .catg h3 {
+  background-color: var(--Tech);
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 0px 0px 10px 5px;
+}
+#landing_page .page_1 .blog5 h1 {
+  font-family: var(--heading_font);
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+/* -----------------------blog no 3--------------------- */
+#landing_page .page_1 .blog3 {
+  background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
+    url(../IMAGES/off-road-min.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  border-radius: 2px;
+  grid-row: span 2;
+  min-height: 213.59px;
+  min-width: 300px;
+}
+#landing_page .page_1 .blog3 .catg h3 {
+  background-color: var(--Travel);
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 0px 0px 10px 5px;
+}
+#landing_page .page_1 .blog3 h1 {
+  font-family: var(--heading_font);
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+/* -------------------------blog no 6----------------------- */
+#landing_page .page_1 .blog6 {
+  background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
+    url(../IMAGES/bilding-min.jpg);
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  border-radius: 2px;
+  min-height: 213.59px;
+  min-width: 300px;
+}
+#landing_page .page_1 .blog6 .catg h3 {
+  background-color: var(--Tech);
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 0px 0px 10px 5px;
+}
+#landing_page .page_1 .blog6 h1 {
+  font-family: var(--heading_font);
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+/* making website Responsive */
+@media only screen and (max-width: 1224px) {
+  #landing_page .page_1 {
+    display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 300px 300px 300px;
+    margin: 20px 0px 20px 0px;
+  }
+  #landing_page .page_1 .blog6 {
+    grid-column: span 2;
+  }
+}
+@media only screen and (max-width: 915px) {
+  #act_nav {
+    width: 300px;
+  }
+  #act_nav .links {
+    width: 300px;
+  }
+  #landing_page .page_1 {
+    display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 300px 300px;
+    margin: 20px 0px 20px 0px;
+  }
+  #landing_page .page_1 .blog5 {
+    grid-column: span 2;
+  }
+}
+@media only screen and (max-width: 615px) {
+  #landing_page .page_1 {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 300px;
+    margin: 20px 0px 20px 0px;
+  }
+  #landing_page .page_1 .blog1 {
+    grid-column: 1;
+  }
+  #landing_page .page_1 .blog5 {
+    grid-column: 1;
+  }
+  #landing_page .page_1 .blog6 {
+    grid-column: 1;
+  }
+}
+/* code for the waves */
+svg {
+  transform: rotate(180deg);
+  background-color: white;
+}
+/*------------------------------------------------------------------ -----------------code for the second page  ---------------------- ------------------------------------- */
+#sec_page {
+  background-color: white;
+  width: max-content;
+  min-width: 100vw;
+  height: max-content;
+  min-height: 100vh;
+}
+#sec_page > h1 {
+  font-size: 3rem;
+  margin: 20px 0px 20px 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: 0%;
+}
+#sec_page > h1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 10%;
+  height: 3%;
+  background-color: black;
+}
+/* card's page code starts here */
+#sec_page .page2 {
+  /* width: max-content; */
+  width: 100vw;
+  min-width: 100vw;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+#sec_page .page2 .card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  margin: 20px 10px 20px 10px;
+  width: 350px;
+  min-height: 233px;
+  border-radius: 10px;
+}
+/* --------------------------for first card--------------------- */
+#sec_page .page2 .card1 .img img{
+  width: 100%;
+  height: 50%;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#sec_page .page2 .card1 .text .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Tech);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 25px 0px 10px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+#sec_page .page2 .card1 .text h1{
+  font-family: var(--heading_font);
+  font-size: 2.6rem;
+  font-weight: bolder;
+  margin: 10px 0px 20px 0px;
+}
+#sec_page .page2 .card1 .text h3{
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  text-justify: inter-word;
+  margin: 10px 0px;
+  font-weight: bold;
+  color: grey;
+}
+#sec_page .page2 .card1 .text a{
+  font-size: 1.72rem;
+  display: inline-block;
+  color: rgb(189, 234, 245);
+  margin: 15px 0px 10px 1px;
+  padding: 8px 10px;
+  transition: 0.4s;
+  border-radius: 10px;
+  border: solid 1px rgb(116, 204, 245);
+}
+#sec_page .page2 .card1 .text a:hover{
+  border-radius: 15px;
+  color: rgb(127, 208, 255);
+}
+/* --------------------------for Second card--------------------- */
+#sec_page .page2 .card2 .img img{
+  width: 100%;
+  height: 50%;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#sec_page .page2 .card2 .text .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Auto);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 25px 0px 10px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+#sec_page .page2 .card2 .text h1{
+  font-family: var(--heading_font);
+  font-size: 2.6rem;
+  font-weight: bolder;
+  margin: 10px 0px 20px 0px;
+}
+#sec_page .page2 .card2 .text h3{
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  text-justify: inter-word;
+  margin: 10px 0px;
+  font-weight: bolder;
+  color: grey;
+}
+#sec_page .page2 .card2 .text a{
+  font-size: 1.72rem;
+  display: inline-block;
+  color: rgb(189, 234, 245);
+  margin: 15px 0px 10px 1px;
+  padding: 8px 10px;
+  transition: 0.4s;
+  border-radius: 10px;
+  border: solid 1px rgb(116, 204, 245);
+}
+#sec_page .page2 .card2 .text a:hover{
+  border-radius: 15px;
+  color: rgb(127, 208, 255);
+}
+/* --------------------------for third card--------------------- */
+#sec_page .page2 .card3 .img img{
+  width: 100%;
+  height: 50%;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#sec_page .page2 .card3 .text .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Tech);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 25px 0px 10px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+#sec_page .page2 .card3 .text h1{
+  font-family: var(--heading_font);
+  font-size: 2.6rem;
+  font-weight: bolder;
+  margin: 10px 0px 20px 0px;
+}
+#sec_page .page2 .card3 .text h3{
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  text-justify: inter-word;
+  margin: 10px 0px;
+  font-weight: bolder;
+  color: grey;
+}
+#sec_page .page2 .card3 .text a{
+  font-size: 1.72rem;
+  display: inline-block;
+  color: rgb(189, 234, 245);
+  margin: 15px 0px 10px 1px;
+  padding: 8px 10px;
+  transition: 0.4s;
+  border-radius: 10px;
+  border: solid 1px rgb(116, 204, 245);
+}
+#sec_page .page2 .card3 .text a:hover{
+  border-radius: 15px;
+  color: rgb(127, 208, 255);
+}
+/* --------------------------for fouth card--------------------- */
+#sec_page .page2 .card4 .img img{
+  width: 100%;
+  height: 50%;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#sec_page .page2 .card4 .text .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Tech);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 25px 0px 10px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+#sec_page .page2 .card4 .text h1{
+  font-family: var(--heading_font);
+  font-size: 2.6rem;
+  font-weight: bolder;
+  margin: 10px 0px 20px 0px;
+}
+#sec_page .page2 .card4 .text h3{
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  text-justify: inter-word;
+  margin: 10px 0px;
+  font-weight: bolder;
+  color: grey;
+}
+#sec_page .page2 .card4 .text a{
+  font-size: 1.72rem;
+  display: inline-block;
+  color: rgb(189, 234, 245);
+  margin: 15px 0px 10px 1px;
+  padding: 8px 10px;
+  transition: 0.4s;
+  border-radius: 10px;
+  border: solid 1px rgb(116, 204, 245);
+}
+#sec_page .page2 .card4 .text a:hover{
+  border-radius: 15px;
+  color: rgb(127, 208, 255);
+}
+/* --------------------------for fifth card--------------------- */
+#sec_page .page2 .card5 .img img{
+  width: 100%;
+  height: 50%;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#sec_page .page2 .card5 .text .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Travel);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 25px 0px 10px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+#sec_page .page2 .card5 .text h1{
+  font-family: var(--heading_font);
+  font-size: 2.6rem;
+  font-weight: bolder;
+  margin: 10px 0px 20px 0px;
+}
+#sec_page .page2 .card5 .text h3{
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  text-justify: inter-word;
+  margin: 10px 0px;
+  font-weight: bolder;
+  color: grey;
+}
+#sec_page .page2 .card5 .text a{
+  font-size: 1.72rem;
+  display: inline-block;
+  color: rgb(189, 234, 245);
+  margin: 15px 0px 10px 1px;
+  padding: 8px 10px;
+  transition: 0.4s;
+  border-radius: 10px;
+  border: solid 1px rgb(116, 204, 245);
+}
+#sec_page .page2 .card5 .text a:hover{
+  border-radius: 15px;
+  color: rgb(127, 208, 255);
+}
+/* --------------------------for sixth card--------------------- */
+#sec_page .page2 .card6 .img img{
+  width: 100%;
+  height: 50%;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#sec_page .page2 .card6 .text .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Auto);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 25px 0px 10px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+#sec_page .page2 .card6 .text h1{
+  font-family: var(--heading_font);
+  font-size: 2.6rem;
+  font-weight: bolder;
+  margin: 10px 0px 20px 0px;
+}
+#sec_page .page2 .card6 .text h3{
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  text-justify: inter-word;
+  margin: 10px 0px;
+  font-weight: bolder;
+  color: grey;
+}
+#sec_page .page2 .card6 .text a{
+  font-size: 1.72rem;
+  display: inline-block;
+  color: rgb(189, 234, 245);
+  margin: 15px 0px 10px 1px;
+  padding: 8px 10px;
+  transition: 0.4s;
+  border-radius: 10px;
+  border: solid 1px rgb(116, 204, 245);
+}
+#sec_page .page2 .card6 .text a:hover{
+  border-radius: 15px;
+  color: rgb(127, 208, 255);
+}
+/*------------------- code for the third page---------------------- */
+#th_page{
+  width: max-content;
+  min-width: 100vw;
+  height: max-content;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#th_page .act_page{
+  display: grid;
+  grid-template-columns: 300px 350px 400px ;
+  grid-template-rows: 290px 300px;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin: 30px 0px 30px 0px;
+}
+#th_page .act_page .blog_s1,
+.blog_s2,
+.blog_s3,
+.blog_s4{
+  border-radius: 6px;
+  min-width: 300px;
+  min-height: 213.59px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* code for blog no1 */
+#th_page .act_page .blog_s1{
+  grid-column: span 2;
+  background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.705)),
+    url(../IMAGES/bigest.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#th_page .act_page .blog_s1 .catg > h3{
+  color: whitesmoke;
+  background-color: var(--Tech);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 25px 0px 5px 10px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+#th_page .act_page .blog_s1 a > h1{
+  font-family: var(--heading_font);
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin: 5px 0px 20px 10px;
+}
+/* ----------------------blog 2 code start from here--------------------- */
+#th_page .act_page .blog_s2{
+  grid-row: span 3;
+  background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.705)),
+  url(../IMAGES/james.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#th_page .act_page .blog_s2 .catg > h3{
+  color: whitesmoke;
+  background-color: var(--Tech);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 25px 0px 5px 10px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+#th_page .act_page .blog_s2 a > h1{
+  font-family: var(--heading_font);
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin: 5px 0px 20px 10px;
+}
+/* b----------------------------blog 3 ------------------------------ */
+#th_page .act_page .blog_s3{
+  grid-row: span 2;
+  background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.705)),
+  url(../IMAGES/clima.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#th_page .act_page .blog_s3 .catg > h3{
+  color: whitesmoke;
+  background-color: var(--Auto);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 25px 0px 5px 10px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+#th_page .act_page .blog_s3 a > h1{
+  font-family: var(--heading_font);
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin: 5px 0px 20px 10px;
+}
+/* ------------------------blog4 ----------------------- */
+#th_page .act_page .blog_s4{
+  grid-row: span 2;
+  background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.705)),
+  url(../IMAGES/dragon.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#th_page .act_page .blog_s4 .catg > h3{
+  color: whitesmoke;
+  background-color: var(--Tech);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 25px 0px 5px 10px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+#th_page .act_page .blog_s4 a > h1{
+  font-family: var(--heading_font);
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin: 5px 0px 20px 10px;
+}
+/* ?------------making third page responsive------------------ */
+@media only screen and (max-width: 1124px) {
+  #th_page .act_page{
+    grid-template-columns: 300px 350px ;
+    grid-template-rows: 290px 300px 300px;
+  }
+  #th_page .act_page .blog_s2{
+    grid-row: span 3;
+  }
+  #th_page .act_page .blog_s4{
+    grid-column: span 1;
+  }
+  #th_page .act_page .blog_s3{
+    grid-row: 2;
+  }
+}
+@media only screen and (max-width: 695px) {
+  #th_page .act_page{
+    grid-template-columns: 450px;
+    grid-template-rows: 290px 300px 300px 300px;
+  }
+  #th_page .act_page .blog_s1{
+    grid-column: 1;
+  }
+  #th_page .act_page .blog_s2{
+    grid-row: span 1;
+  }
+  #th_page .act_page .blog_s3{
+    grid-row: span 1;
+  }
+  #th_page .act_page .blog_s4{
+    grid-row: 1;
+  }
+}
+@media only screen and (max-width: 460px) {
+  #th_page .act_page{
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+  }
+}
+/*designing fourth page*/
+body #f_page{
+  width: 100vw;
+  min-height: 100vh;
+  height: max-content;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#f_page .lft_page{
+  min-width: 300px;
+  width: 68vw;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+
+}
+
+/* design of the cards inside of the left page (block like structure) */
+#f_page .lft_page .ins_blg_1,
+.ins_blg_2,
+.ins_blg_3,
+.ins_blg_4,
+.ins_blg_5,
+.ins_blg_6,
+.ins_blg_7,
+.ins_blg_8,
+.ins_blg_9,
+.ins_blg_10{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* -------------------------------designing img inside iins_blg_1 */
+#f_page .lft_page .ins_blg_1 .img_ins{
+  height: 90%;
+  width: 30%;
+  background-image: url(../IMAGES/window.jfif);
+  background-position: center;
+  background-size: cover;
+}
+#f_page .lft_page .ins_blg_1 .text_ins{
+  height: 100%;
+  width: 70%;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#f_page .lft_page .ins_blg_1 .text_ins .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Tech);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  margin: 10px 0px 5px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+/* -------------------------------designing img inside iins_blg_2--------- */
+#f_page .lft_page .ins_blg_2 .img_ins{
+  height:  90%;
+  width: 30%;
+  background-image: url(../IMAGES/car_mer.jfif);
+  background-position: center;
+  background-size: cover;
+}
+#f_page .lft_page .ins_blg_2 .text_ins{
+  height: 100%;
+  width: 70%;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#f_page .lft_page .ins_blg_2 .text_ins .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Auto);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  margin: 10px 0px 5px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+/* -------------------------------designing img inside iins_blg_3 */
+#f_page .lft_page .ins_blg_3 .img_ins{
+  height:  90%;
+  width: 30%;
+  background-image: url(../IMAGES/and_nat.jfif);
+  background-position: center;
+  background-size: cover;
+}
+#f_page .lft_page .ins_blg_3 .text_ins{
+  height: 100%;
+  width: 70%;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#f_page .lft_page .ins_blg_3 .text_ins .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Travel);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  margin: 10px 0px 5px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+/* -------------------------------designing img inside iins_blg_4 */
+#f_page .lft_page .ins_blg_4 .img_ins{
+  height:  90%;
+  width: 30%;
+  background-image: url(../IMAGES/car_mer_Jeep.jfif);
+  background-position: center;
+  background-size: cover;
+}
+#f_page .lft_page .ins_blg_4 .text_ins{
+  height: 100%;
+  width: 70%;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#f_page .lft_page .ins_blg_4 .text_ins .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Auto);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  margin: 10px 0px 5px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+/* -------------------------------designing img inside iins_blg_5 */
+#f_page .lft_page .ins_blg_5 .img_ins{
+  height:  90%;
+  width: 30%;
+  background-image: url(../IMAGES/kevin_nat.jfif);
+  background-position: center;
+  background-size: cover;
+}
+#f_page .lft_page .ins_blg_5 .text_ins{
+  height: 100%;
+  width: 70%;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#f_page .lft_page .ins_blg_5 .text_ins .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Travel);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  margin: 10px 0px 5px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+/* -------------------------------designing img inside iins_blg_6 */
+#f_page .lft_page .ins_blg_6 .img_ins{
+  height:  90%;
+  width: 30%;
+  background-image: url(../IMAGES/mac.jfif);
+  background-position: center;
+  background-size: cover;
+}
+#f_page .lft_page .ins_blg_6 .text_ins{
+  height: 100%;
+  width: 70%;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#f_page .lft_page .ins_blg_6 .text_ins .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Tech);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  margin: 10px 0px 5px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+/* -------------------------------designing img inside iins_blg_7 */
+#f_page .lft_page .ins_blg_7 .img_ins{
+  height:  90%;
+  width: 30%;
+  background-image: url(../IMAGES/dragon.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#f_page .lft_page .ins_blg_7 .text_ins{
+  height: 100%;
+  width: 70%;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#f_page .lft_page .ins_blg_7 .text_ins .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Tech);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  margin: 10px 0px 5px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+/* -------------------------------designing img inside iins_blg_8 */
+#f_page .lft_page .ins_blg_8 .img_ins{
+  height:  90%;
+  width: 30%;
+  background-image: url(../IMAGES/rockets-min.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#f_page .lft_page .ins_blg_8 .text_ins{
+  height: 100%;
+  width: 70%;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#f_page .lft_page .ins_blg_8 .text_ins .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Tech);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  margin: 10px 0px 5px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+/* -------------------------------designing img inside iins_blg_9 */
+#f_page .lft_page .ins_blg_9 .img_ins{
+  height:  90%;
+  width: 30%;
+  background-image: url(../IMAGES/mountain-min.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#f_page .lft_page .ins_blg_9 .text_ins{
+  height: 100%;
+  width: 70%;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#f_page .lft_page .ins_blg_9 .text_ins .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Travel);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  margin: 10px 0px 5px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+/* -------------------------------designing img inside iins_blg_10 */
+#f_page .lft_page .ins_blg_10 .img_ins{
+  height:  90%;
+  width: 30%;
+  background-image: url(../IMAGES/img1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#f_page .lft_page .ins_blg_10 .text_ins{
+  height: 100%;
+  width: 70%;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#f_page .lft_page .ins_blg_10 .text_ins .catg > h2{
+  color: whitesmoke;
+  background-color: var(--Travel);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 8px 5px 8px;
+  border-radius: 3px;
+  margin: 10px 0px 5px 0px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+/* ----------------desgning right part of the fourth page---------------------- */
+#f_page .rgt_page{
+  min-width: 300px;
+  width: 28vw;
+  height: max-content;
+  min-height: 122vh;
+}
+#f_page .rgt_page h1{
+  text-align: center;
+  font-size: 3rem;
+  font-family: var(--heading_font);
+  font-weight: lighter;
+}
+#f_page .rgt_page h1 span{
+  font-weight: bold;
+  font-variant: small-caps;
+}
+/* ----------------code for the footer--------------------- */
+footer{
+  width: 100vw; /*Temporary Code*/
+  height: max-content;
+  background-color: #27292b;
+  color: white;
+}
+footer>h1{
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Quicksand", sans-serif;
+  margin: 10px 0px 5px 0px;
+}
+footer .columns{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: max-content;
+  padding: 10px 0px 10px 0px;
+  margin: 50px 0px 0px 0px ;
+}
+footer .columns .col1,
+.col2,
+.col3{
+  margin: 0px 10px 0px 0px;
+  width: 300px;
+  min-height: 45vh;
+  max-height: auto;
+  /* background-color: rgb(15, 22, 22); */
+}
+footer .columns .col1 h1{
+  text-align: left;
+  font-size: 2.4rem;
+  font-family: var(--heading_font);
+  font-weight: bolder;
+  margin: 0px 0px 10px 0px;
+  font-variant: small-caps;
+}
+footer .columns .col1 h3{
+  font-size: 1.4rem;
+  font-family: "Roboto",sans-serif;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-style: italic;
+  color: grey;
+}
+/* code for designing column 3 */
+footer .columns .col2{
+  width: 200px;
+}
+footer .columns .col2 ul li{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 40px 40px 40px 40px ;
+  text-align: center;
+}
+footer .columns .col2 ul li a{
+  list-style: none;
+  font-size: 1.6rem;
+  font-family: "Roboto",sans-serif;
+  color: grey;
+  position: relative;
+  
+}
+footer .columns .col2 ul li a::before{
+  content: "";
+  position: absolute;
+  top:0%;
+  left: 15%;
+  width: 0%;
+  height: 50%;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  transition: 0.5s ease-in-out;
+}
+/* adding hovering effect to a link */
+footer .columns .col2 ul li a:hover::before{
+  width: 85%;
+}
+/* designing column 3 */
+footer .columns .col3 h1{
+  font-family: "Roboto",sans-serif;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-variant: small-caps;
+}
+footer .columns .col3 .links a i{
+  padding: 10px;
+  font-size: 2rem;
+  color: gray;
+  transition: 0.7s;
+}
+footer .columns .col3 .links a i:hover{
+  color: aliceblue;
+}
+/* designing copyright statement */
+footer .copy_right h1{
+  text-align: center;
+  font-family: "roboto",sans-serif;
+  font-weight: lighter;
+  padding: 0px 0px 20px 0px;
+  font-size: 1.7rem;
+}
