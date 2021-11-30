@@ -128,7 +128,7 @@ nav .ham-bar i {
 /* -------------------blog code starts------------- */
 #landing_page .page_1 .blog1 {
   background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
-    url(../IMAGES/ihone-min.jpg);
+    url(ihone-min.jpg);
   background-size: cover;
   background-position: left;
   display: flex;
@@ -161,7 +161,7 @@ nav .ham-bar i {
 /* ------------------------blog no 2------------------------- */
 #landing_page .page_1 .blog4 {
   background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
-    url(../IMAGES/mountain-min.jpg);
+    url(mountain-min.jpg);
   background-size: cover;
   background-position: left;
   display: flex;
@@ -193,7 +193,7 @@ nav .ham-bar i {
 /* ------------------------blog no 2----------------------- */
 #landing_page .page_1 .blog2 {
   background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
-    url(../IMAGES/caaars-min.jpeg);
+    url(caaars-min.jpeg);
   background-size: cover;
   background-position: left;
   display: flex;
@@ -226,7 +226,7 @@ nav .ham-bar i {
 /* --------------------------blog no 5--------------- */
 #landing_page .page_1 .blog5 {
   background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
-    url(../IMAGES/rockets-min.jpg);
+    url(rockets-min.jpg);
   background-size: cover;
   background-position: left;
   display: flex;
@@ -256,7 +256,7 @@ nav .ham-bar i {
 /* -----------------------blog no 3--------------------- */
 #landing_page .page_1 .blog3 {
   background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
-    url(../IMAGES/off-road-min.jpg);
+    url(off-road-min.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -287,7 +287,7 @@ nav .ham-bar i {
 /* -------------------------blog no 6----------------------- */
 #landing_page .page_1 .blog6 {
   background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.596)),
-    url(../IMAGES/bilding-min.jpg);
+    url(bilding-min.jpg);
   background-size: cover;
   background-position: left;
   display: flex;
@@ -759,7 +759,7 @@ svg {
 #th_page .act_page .blog_s1{
   grid-column: span 2;
   background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.705)),
-    url(../IMAGES/bigest.jpg);
+    url(bigest.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -784,7 +784,7 @@ svg {
 #th_page .act_page .blog_s2{
   grid-row: span 3;
   background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.705)),
-  url(../IMAGES/james.jpg);
+  url(james.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -809,7 +809,7 @@ svg {
 #th_page .act_page .blog_s3{
   grid-row: span 2;
   background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.705)),
-  url(../IMAGES/clima.jpg);
+  url(clima.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -834,7 +834,7 @@ svg {
 #th_page .act_page .blog_s4{
   grid-row: span 2;
   background: linear-gradient(rgba(241, 241, 241, 0), rgba(54, 52, 52, 0.705)),
-  url(../IMAGES/dragon.jpg);
+  url(dragon.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -936,7 +936,7 @@ body #f_page{
 #f_page .lft_page .ins_blg_1 .img_ins{
   height: 90%;
   width: 30%;
-  background-image: url(../IMAGES/window.jfif);
+  background-image: url(window.jfif);
   background-position: center;
   background-size: cover;
 }
@@ -963,7 +963,7 @@ body #f_page{
 #f_page .lft_page .ins_blg_2 .img_ins{
   height:  90%;
   width: 30%;
-  background-image: url(../IMAGES/car_mer.jfif);
+  background-image: url(car_mer.jfif);
   background-position: center;
   background-size: cover;
 }
@@ -990,7 +990,7 @@ body #f_page{
 #f_page .lft_page .ins_blg_3 .img_ins{
   height:  90%;
   width: 30%;
-  background-image: url(../IMAGES/and_nat.jfif);
+  background-image: url(and_nat.jfif);
   background-position: center;
   background-size: cover;
 }
@@ -1017,7 +1017,7 @@ body #f_page{
 #f_page .lft_page .ins_blg_4 .img_ins{
   height:  90%;
   width: 30%;
-  background-image: url(../IMAGES/car_mer_Jeep.jfif);
+  background-image: url(car_mer_Jeep.jfif);
   background-position: center;
   background-size: cover;
 }
@@ -1044,7 +1044,7 @@ body #f_page{
 #f_page .lft_page .ins_blg_5 .img_ins{
   height:  90%;
   width: 30%;
-  background-image: url(../IMAGES/kevin_nat.jfif);
+  background-image: url(kevin_nat.jfif);
   background-position: center;
   background-size: cover;
 }
@@ -1071,7 +1071,7 @@ body #f_page{
 #f_page .lft_page .ins_blg_6 .img_ins{
   height:  90%;
   width: 30%;
-  background-image: url(../IMAGES/mac.jfif);
+  background-image: url(mac.jfif);
   background-position: center;
   background-size: cover;
 }
@@ -1098,7 +1098,7 @@ body #f_page{
 #f_page .lft_page .ins_blg_7 .img_ins{
   height:  90%;
   width: 30%;
-  background-image: url(../IMAGES/dragon.jpg);
+  background-image: url(dragon.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1125,7 +1125,7 @@ body #f_page{
 #f_page .lft_page .ins_blg_8 .img_ins{
   height:  90%;
   width: 30%;
-  background-image: url(../IMAGES/rockets-min.jpg);
+  background-image: url(rockets-min.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1152,7 +1152,7 @@ body #f_page{
 #f_page .lft_page .ins_blg_9 .img_ins{
   height:  90%;
   width: 30%;
-  background-image: url(../IMAGES/mountain-min.jpg);
+  background-image: url(mountain-min.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1179,7 +1179,7 @@ body #f_page{
 #f_page .lft_page .ins_blg_10 .img_ins{
   height:  90%;
   width: 30%;
-  background-image: url(../IMAGES/img1.jpg);
+  background-image: url(img1.jpg);
   background-position: center;
   background-size: cover;
 }
